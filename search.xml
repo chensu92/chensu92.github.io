@@ -857,6 +857,17 @@
     
     
     <entry>
+      <title>黑石说</title>
+      <link href="/bb/index.html"/>
+      <url>/bb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>南宁 2019 秋</title>
       <link href="/nanning2019.html"/>
       <url>/nanning2019.html</url>
@@ -890,9 +901,9 @@
     
     
     <entry>
-      <title>产品图案例</title>
-      <link href="/product-pattern-example.html"/>
-      <url>/product-pattern-example.html</url>
+      <title>作品</title>
+      <link href="/work/index.html"/>
+      <url>/work/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -912,9 +923,9 @@
     
     
     <entry>
-      <title>作品</title>
-      <link href="/work/index.html"/>
-      <url>/work/index.html</url>
+      <title>产品图案例</title>
+      <link href="/product-pattern-example.html"/>
+      <url>/product-pattern-example.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
