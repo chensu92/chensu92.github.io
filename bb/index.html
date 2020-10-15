@@ -195,14 +195,7 @@
 </div>
   <!-- Main Content -->
   <div class='l_main'>
-  <div class="mybox m1 mb2"style="padding: 5.5rem;">
-  <div class="Post_content_box">
-   <article id="Post_wysiwyg" class="duta">
-   <article class="message lv" style="background-color: #ebfffc;">
-   <div class="message_body" style="	border-color: #00947e; border-radius: 4px; border-style: solid; border-width: 0 0 0 4px; color: #4a4a4a; padding: 1.25em 1.5em; word-break: break-all;";>
-   <p>👉🏼此说说通过📱手机微信发出，主要记录黑石碎片化思考和动态。📑</p>
-   </div></article><p>此页面最多显示10条说说，完整版请移步👉🏼：<a target="_blank" rel="noopener" href="https://b.cssj.fun/">https://b.cssj.fun</a></p>
-
+  
     <style>
       @font-face {
         font-family: "iconfont";
@@ -235,17 +228,131 @@
       }
     </style>
     <main id="app">
-      <p class="tip" style="margin-bottom: 1rem;">共计发送 {{count}} 条说说</p>
+      <p class="tip">共计发送 {{count}} 条说说</p>
       <div class="timenode" v-for="item in contents" v-cloak>
-        <div class="timenode" style="before { content:''; z-index:1; osition:absolute; background:rgba(68,215,182,.5); width:2px; left:7px">
+        <div class="meta">
           <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
         </div>
-        <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
+        <div class="body">
           <p v-html='item.attributes.content'></p>
         </div>
       </div>
     </main>
     
+    
+{{ define "main" }}
+<div class="post">
+  <h2 class="post-title">{{.Title}}</h2>
+  <div class="post-content" id="app">
+    <p v-show="count == 0">别急，加载呢……</p>
+    <div v-show="count">
+    <p >总共 b 了 {{count}} 条</p>
+    <section class="timeline">
+      <ul>
+        <li class="item" v-for="item in contents" v-cloak>
+          <div>
+            <p v-html='item.attributes.content'></p>
+            <i><time v-bind:datetime="item.attributes.time"><small>{{htmlUnescape "发布于 {{item.attributes.time}} 来自 「{{item.attributes.from}} 」"}}</small></time></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="load-ctn">
+      <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
+      <p class="tip" v-else>别急，加载呢</p>
+    </div>
+  </div>
+  </div>
+</div>
+<style>
+  .timeline ul {margin:0;padding-bottom:2rem;}
+  .timeline ul li {background:#eaeaea;list-style-type:none;position:relative;width:2px;margin-left:20px;padding:10px 0 50px;}
+  .timeline ul li::after {content:'';position:absolute;left:50%;top:25px;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:inherit;}
+  .timeline ul li div {background:#eaeaea;border-radius:5px;position:relative;top:0;left:40px;width:670px;padding:8px 16px;}
+  .timeline ul li div p{margin:0;}
+  .timeline ul li div::before{content:'';position:absolute;top:10px;width:0;height:0;border-style:solid;left:-15px;border-width:8px 16px 8px 0;border-color:transparent #eaeaea transparent transparent;}
+  .dark-theme .timeline ul li,.dark-theme .timeline ul li div{background:#3b3d42;}
+  .dark-theme .timeline ul li div::before{border-color:transparent #3b3d42 transparent transparent;}
+  @media (max-width:860px) {
+    .timeline ul li{margin-left:0;}
+    .timeline ul li div{width:calc(100vw - 75px);left:30px;}
+
+  }
+</style>
+<link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css"></link>
+{{ end }}
+
+{{ define "footer" }}
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+    {{$scratch.Add "total" .WordCount}}
+{{ end }}
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+<script type="text/javascript">
+    var {
+        Query
+    } = AV;
+    AV.init({
+        appId:"DOe9OHHCYn3hgxdsp0w4YNH4-gzGzoHsz", //你的 leancloud 应用 id （设置-应用keys-AppID）
+        appKey:"AXFSe0NeMzd2hfBqvCyXqRuI", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
+        serverURLs: 'https://bb.cssj.fun'
+    });
+
+    var query = new AV.Query('content');
+
+    var app = new Vue({
+        el:'#app',
+        data:{
+            isShow: true,
+            page:0,
+            count:0,
+            contents:[]
+        },
+        methods:{
+            loadMore:function(event) { 
+              getData(++this.page);
+            }
+        }
+    })
+
+    function urlToLink(str) {
+        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g;;
+
+        str = str.replace(re, function(website) {
+            return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
+        });
+        return str;
+    }
+
+    function getData(page = 0) {
+        query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
+            if (results.length == 0) {
+                alert('b 尽，待续')
+            } else {
+                let resC = results;
+                reqData = false;
+                resC.forEach((i) => {
+                    let dateTmp = new Date(i.createdAt);
+                    i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) :dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) :dateTmp.getDate()} ${(dateTmp.getHours() + 1) <= 10 ? ('0' + dateTmp.getHours()) :dateTmp.getHours()}:${(dateTmp.getMinutes() + 1) <= 10 ? ('0' + dateTmp.getMinutes()) :dateTmp.getMinutes()}`;
+                    i.attributes.content = urlToLink(i.attributes.content);
+                    i.attributes.from = i.attributes.from;
+                    app.contents.push(i);
+                })
+            }
+
+        }, function(error) {});
+    }
+
+    getData(0);
+
+    query.count().then(function(count) {
+        app.count = count;
+    }, function(error) {});
+</script>
+{{ end }}
 </div>
  
 <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
