@@ -901,9 +901,9 @@
     
     
     <entry>
-      <title>产品图案例</title>
-      <link href="/product-pattern-example.html"/>
-      <url>/product-pattern-example.html</url>
+      <title>工具箱</title>
+      <link href="/tools/index.html"/>
+      <url>/tools/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -912,9 +912,9 @@
     
     
     <entry>
-      <title>工具箱</title>
-      <link href="/tools/index.html"/>
-      <url>/tools/index.html</url>
+      <title>产品图案例</title>
+      <link href="/product-pattern-example.html"/>
+      <url>/product-pattern-example.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
