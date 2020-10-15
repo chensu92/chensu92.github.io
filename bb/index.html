@@ -240,11 +240,10 @@
     </main>
 
 
-    {{ define "main" }}
     <div class="post">
       <h2 class="post-title">{{.Title}}</h2>
       <div class="post-content" id="app">
-        <p v-show="count == 0">别急，加载呢……</p>
+        <p >总共 b 了 {{htmlUnescape "{{count}}" }} 条</p>
         <div v-show="count">
         <p >总共 b 了 {{count}} 条</p>
         <section class="timeline">
