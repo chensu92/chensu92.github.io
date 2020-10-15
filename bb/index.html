@@ -251,17 +251,13 @@
         <p class="tip" style="padding: 1.2rem">👉🏼共计发送 {{count}} 条说说</p>
 
         
-    
-          <section class="timeline">
-            <ul>
-              <li class="item" v-for="item in contents" v-cloak>
-                <div>
-                  <p v-html='item.attributes.content'></p>
-                  <i><time v-bind:datetime="item.attributes.time"><small>{{htmlUnescape "发布于 {{item.attributes.time}} 来自 「{{item.attributes.from}} 」"}}</small></time></i>
-                </div>
-              </li>
-            </ul>
-          </section>
+        <div class="timenode" v-for="item in contents" v-cloak style="margin:0;padding-bottom:2rem;">
+
+          <div class="timenode" style="::before { content:''; z-index:1; osition:absolute; background:rgba(68,215,182,.5); width:2px; left:7px">
+            <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+          </div>
+
+
 
 
           <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
