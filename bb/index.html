@@ -249,17 +249,14 @@
       </style>
       <main id="app">
         <p class="tip" style="padding: 1.2rem">👉🏼共计发送 {{count}} 条说说</p>
-       
+
+        
         <div class="timenode" v-for="item in contents" v-cloak style="margin:0;padding-bottom:2rem;">
-          <ul> 
-          <li>
-          <div class="timenode">
-           <p><i><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></i></p>
-          </div>
-          </li>
-          </ul>
-          </div>
           
+          <div class=".timeline ul li::after"  >
+            <p><i><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></i></p>
+          </div>
+
           <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
             <p v-html='item.attributes.content'></p>
           </div>
