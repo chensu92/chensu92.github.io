@@ -364,7 +364,7 @@
         let resC = results;
         reqData = false;
         resC.forEach((i) => {
-          let dateTmp = new Date(i.createdAt);
+          let MDY = new Date(i.createdAt);
           i.attributes.time = timeago(dateTmp);
           i.attributes.content = urlToLink(i.attributes.content);
           app.contents.push(i);
