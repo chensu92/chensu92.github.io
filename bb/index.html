@@ -237,6 +237,17 @@
         .icon-lianjie-copy:before {
           content: "\e6a4";
         }  
+  .qaz ::after {content:'';position:absolute;left:50%;top:25px;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:inherit;}
+  .qaz {background:#eaeaea;border-radius:5px;position:relative;top:0;left:40px;width:670px;padding:8px 16px;}
+  .qaz p{margin:0;}
+  .qaz::before{content:'';position:absolute;top:10px;width:0;height:0;border-style:solid;left:-15px;border-width:8px 16px 8px 0;border-color:transparent #eaeaea transparent transparent;}
+  .dark-theme .timeline ul li,.dark-theme .timeline ul li div{background:#3b3d42;}
+  .dark-theme .timeline ul li div::before{border-color:transparent #3b3d42 transparent transparent;}
+  @media (max-width:860px) {
+    .timeline ul li{margin-left:0;}
+    .timeline ul li div{width:calc(100vw - 75px);left:30px;}
+
+  }
       </style>
       <main id="app">
         <p class="tip" style="padding: 1.2rem">👉🏼共计发送 {{count}} 条说说</p>
@@ -244,8 +255,8 @@
         
         <div class="timenode" v-for="item in contents" v-cloak style="margin:0;padding-bottom:2rem;">
           
-          <div class="timeline" style="position:absolute; transform: translateX(-50%);width: 80px;" >
-            <p><i><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></i></p>
+          <div class="qaz" style="position:absolute; transform: translateX(-50%);width: 80px;" >
+            <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
           </div>
 
           <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
