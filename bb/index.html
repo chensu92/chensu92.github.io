@@ -21,7 +21,7 @@
   
   <!--Open Graph Title-->
   
-  <meta property="og:title" content="黑石说" />
+  <meta property="og:title" content="我的疯言疯语" />
   
   <!--Open Graph Description-->
   
@@ -38,7 +38,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Title -->
   
-  <title>黑石说 - Chen su</title>
+  <title>我的疯言疯语 - Chen su</title>
   <!-- 添加到主屏后的标题（iOS 6 新增） -->
   <meta name="apple-mobile-web-app-title" content="Chen su">
   <!-- 是否启用 WebApp 全屏模式 -->
@@ -176,7 +176,7 @@
   <div class="itp-cover-text">
     <div class="itp-cover-title mdui-text-center"
       style="color: #fff; opacity: 1;">
-      黑石说</div>
+      我的疯言疯语</div>
     <div class="itp-cover-subtitle mdui-text-center"
       style="color: #fff; opacity: 0.8;">
       
@@ -193,7 +193,7 @@
   <div class="itp-cover-text">
     <div class="itp-cover-title mdui-text-center"
       style="color: #000; opacity: 1;">
-      黑石说</div>
+      我的疯言疯语</div>
     <div class="itp-cover-subtitle mdui-text-center"
       style="color: #000 !important; opacity: 0.8;">
       
@@ -256,16 +256,16 @@
         div.timenode:hover .meta:after{background:#ff5722;transform:scale(1)}article#arc .timenode:after,article#arc .timenode:before{margin-left:12px}article#arc .timenode .meta{padding:6px 0;line-height:1.5;height:auto;max-width:100%;display:flex;font-size:.9375rem;font-weight:500;border-radius:2px;color:var(--color-list)}article#arc .timenode .meta:before{display:none}article#arc .timenode .meta:after{margin-left:14px}article#arc .timenode .meta:hover{color:#00947e;background:#f4f4f4}article#arc .timenode .meta time{color:var(--color-meta);margin-left:34px;margin-right:16px;flex-shrink:0}article#arc .timenode .meta i{line-height:1.5;color:#ff5722}article#arc .timenode .meta i.red{color:#fe5f58}article#arc .timenode .meta i.green{color:#3dc550}article#arc .timenode .meta i.yellow{color:#ffbd2b}article#arc .timenode .meta i.blue{color:#1bcdfc}article#arc .timenode .meta i.theme{color:#44d7b6}article#arc .timenode .meta i.accent{color:#ff5722}article#arc .timenode .meta i.orange{color:#ff5722}article#tag .all-tags ul{margin:0 -8px;padding:0;display:flex;flex-wrap:wrap}article#tag .all-tags ul li{list-style:none;margin:8px;border-radius:4px;overflow:hidden;display:flex;position:relative;font-size:.9375rem}article#tag .all-tags ul li a{display:inline-block;padding:4px 52px 4px 16px;font-weight:500}article#tag .all-tags ul li a:hover{background:#ff5722;color:#fff}article#tag .all-tags ul li span{color:var(--color-meta);background:#fff;padding:2px 8px;border-radius:2px;pointer-events:none;position:absolute;right:2px;top:2px;height:calc(100% - 4px)}article#tag .all-tags ul li span:before{content:'x'}.tagred{background:#feecf0;color:#cc0f35}.tagyellow{background:#f4e9ff;color:#8a51c0}.tagblue{background:#eef3fc;color:#2160c4}.taggreen{background:#ebfffc;color:#00947e}.tagpurple{background:#f4e9ff;color:#8a51c0}.taggrown{background:#fffbeb;color:#947600}
       </style>
       <main id="app">
-        <p class="tip" style="padding: 1.2rem">👉🏼共计发送 {{count}} 条说说</p>
+        <p class="tip" style="padding: 1.2rem">至今为止总共BB了 {{count}} 条废话📑</p>
 
         
-        <div class="timenode" v-for="item in contents" v-cloak style="margin:0;padding-bottom:2rem;">
+        <div class="timenode" v-for="item in contents" v-cloak >
           
           <div class="meta">
           <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
           </div>
        
-          <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
+          <div class="body" style="font-size: 14px;line-height: 1.5rem; color: rgba(0,0,0,0.75);" >
             <p v-html='item.attributes.content'></p>
           </div>
         </div>
@@ -273,7 +273,7 @@
       <article id="Post_wysiwyg" class="duta">
           <article class="message lv" style="background-color: #ebfffc;">
           <div class="message_body" style="	border-color: #00947e; border-radius: 4px; border-style: solid; border-width: 0 0 0 4px; color: #4a4a4a; padding: 1.25em 1.5em; word-break: break-all;";>
-          <p>此说说通过📱手机微信发出，主要记录我的碎片化思考和动态。📑</p>
+          <p>此说说通过📱手机微信发出，主要记录我的碎片化思考和动态。</p>
           <p>此页面最多显示10条说说，完整版请移步👉🏼：<a target="_blank" rel="noopener" href="https://b.cssj.fun/">https://b.cssj.fun</a></p></article></div>
       
 </div>
