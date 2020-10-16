@@ -237,10 +237,23 @@
         .icon-lianjie-copy:before {
           content: "\e6a4";
         }  
-  .meta:after{background:#44d7b6;margin-left:2px;margin-top:2px;width:12px;height:12px;border-radius:6px;transform:scale(.5);transition:all .28s ease;-moz-transition:all .28s ease;-webkit-transition:all .28s ease;-o-transition:all .28s ease}
-  .meta:before{ background:rgba(68,215,182,.5);width:16px;height:16px;border-radius:8px}
- 
-  }
+        .timenode{position:relative}
+        div.timenode:after,div.timenode:before{content:'';z-index:1;position:absolute;background:rgba(68,215,182,.5);width:2px;left:7px}div.timenode:before{top:0;height:6px;}
+        div.timenode:after{top:26px;height:calc(100% - 26px)}
+        div.timenode:last-child:after{height:calc(100% - 26px - 16px);border-bottom-left-radius:2px;border-bottom-right-radius:2px}
+        div.timenode .body,div.timenode .meta{max-width:calc(100% - 24px)}
+        div.timenode .meta{position:relative;color:var(--color-meta);font-size:.875rem;line-height:32px;height:32px}
+        div.timenode .meta:after,div.timenode .meta:before{content:'';position:absolute;top:8px;z-index:2}
+        div.timenode .meta:before{background:rgba(68,215,182,.5);width:16px;height:16px;border-radius:8px}
+        div.timenode .meta:after{background:#44d7b6;margin-left:2px;margin-top:2px;width:12px;height:12px;border-radius:6px;transform:scale(.5);transition:all .28s ease;-moz-transition:all .28s ease;-webkit-transition:all .28s ease;-o-transition:all .28s ease}
+        div.timenode .meta p{font-weight:700;margin:0 0 0 24px}
+        div.timenode .body{margin:0 0 0 24px;padding:16px;border-radius:8px;background:#f6f6f6;display:inline-block}
+        div.timenode .body:empty{display:none}
+        div.timenode .body>:first-child{margin-top:.25em}
+        div.timenode .body>:last-child{margin-bottom:.25em}
+        div.timenode .body .highlight{border:1px solid #e4e4e4}div.timenode:hover .meta{color:var(--color-text)}
+        div.timenode:hover .meta:before{background:rgba(255,87,34,.5)}
+        div.timenode:hover .meta:after{background:#ff5722;transform:scale(1)}article#arc .timenode:after,article#arc .timenode:before{margin-left:12px}article#arc .timenode .meta{padding:6px 0;line-height:1.5;height:auto;max-width:100%;display:flex;font-size:.9375rem;font-weight:500;border-radius:2px;color:var(--color-list)}article#arc .timenode .meta:before{display:none}article#arc .timenode .meta:after{margin-left:14px}article#arc .timenode .meta:hover{color:#00947e;background:#f4f4f4}article#arc .timenode .meta time{color:var(--color-meta);margin-left:34px;margin-right:16px;flex-shrink:0}article#arc .timenode .meta i{line-height:1.5;color:#ff5722}article#arc .timenode .meta i.red{color:#fe5f58}article#arc .timenode .meta i.green{color:#3dc550}article#arc .timenode .meta i.yellow{color:#ffbd2b}article#arc .timenode .meta i.blue{color:#1bcdfc}article#arc .timenode .meta i.theme{color:#44d7b6}article#arc .timenode .meta i.accent{color:#ff5722}article#arc .timenode .meta i.orange{color:#ff5722}article#tag .all-tags ul{margin:0 -8px;padding:0;display:flex;flex-wrap:wrap}article#tag .all-tags ul li{list-style:none;margin:8px;border-radius:4px;overflow:hidden;display:flex;position:relative;font-size:.9375rem}article#tag .all-tags ul li a{display:inline-block;padding:4px 52px 4px 16px;font-weight:500}article#tag .all-tags ul li a:hover{background:#ff5722;color:#fff}article#tag .all-tags ul li span{color:var(--color-meta);background:#fff;padding:2px 8px;border-radius:2px;pointer-events:none;position:absolute;right:2px;top:2px;height:calc(100% - 4px)}article#tag .all-tags ul li span:before{content:'x'}.tagred{background:#feecf0;color:#cc0f35}.tagyellow{background:#f4e9ff;color:#8a51c0}.tagblue{background:#eef3fc;color:#2160c4}.taggreen{background:#ebfffc;color:#00947e}.tagpurple{background:#f4e9ff;color:#8a51c0}.taggrown{background:#fffbeb;color:#947600}
       </style>
       <main id="app">
         <p class="tip" style="padding: 1.2rem">👉🏼共计发送 {{count}} 条说说</p>
@@ -251,7 +264,7 @@
           <div class="meta">
           <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
           </div>
-
+       
           <div class="body" style="margin: 0 0 0 24px;padding: 16px;border-radius: 8px;background: #f6f6f6;display: inline-block;">
             <p v-html='item.attributes.content'></p>
           </div>
