@@ -270,6 +270,7 @@
           </div>
         </div>
       </main>
+      <br />
       <article id="Post_wysiwyg" class="duta">
           <article class="message lv" style="background-color: #ebfffc;">
           <div class="message_body" style="	border-color: #00947e; border-radius: 4px; border-style: solid; border-width: 0 0 0 4px; color: #4a4a4a; padding: 1.25em 1.5em; word-break: break-all;";>
@@ -365,7 +366,7 @@
         reqData = false;
         resC.forEach((i) => {
           let dateTmp = new Date(i.createdAt);
-          i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) :dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) :dateTmp.getDate()} ${(dateTmp.getHours() + 1) <= 10 ? ('0' + dateTmp.getHours()) :dateTmp.getHours()}:${(dateTmp.getMinutes() + 1) <= 10 ? ('0' + dateTmp.getMinutes()) :dateTmp.getMinutes()}`;
+          i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) :dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) :dateTmp.getDate()}`;
           i.attributes.content = urlToLink(i.attributes.content);
           i.attributes.from = i.attributes.from;
           app.contents.push(i);
@@ -383,6 +384,10 @@
  
  
 </script>
+
+
+
+
   <!-- Footer -->
   <!-- Footer -->
 <footer class="mdui-text-center itp-footer">
