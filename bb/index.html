@@ -364,9 +364,10 @@
         let resC = results;
         reqData = false;
         resC.forEach((i) => {
-          let MDYTmp = new Date(i.createdAt);
-          i.attributes.time = timeago(dateTmp);
+          let dateTmp = new Date(i.createdAt);
+          i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) :dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) :dateTmp.getDate()} ${(dateTmp.getHours() + 1) <= 10 ? ('0' + dateTmp.getHours()) :dateTmp.getHours()}:${(dateTmp.getMinutes() + 1) <= 10 ? ('0' + dateTmp.getMinutes()) :dateTmp.getMinutes()}`;
           i.attributes.content = urlToLink(i.attributes.content);
+          i.attributes.from = i.attributes.from;
           app.contents.push(i);
         })
       }
