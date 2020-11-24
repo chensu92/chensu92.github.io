@@ -87,6 +87,10 @@
   <script>
   </script>
   
+  <link rel="stylesheet" href="/css/gitment.css">
+  <script src="/js/gitment.js"></script>
+  <script src="/js/gitment-theme.js"></script>
+  
   
   <!-- Google Analytics -->
   <script>
@@ -303,37 +307,10 @@
           <section class="itp-post-comment noprn">
             <!--评论-->
 
-<!--disqus-->
-<div id="comment"></div>
-    <link rel="stylesheet" href="//d.cssj.fun/disqus/dist/iDisqus.min.css" />
-    <script src="//d.cssj.fun/disqus/dist/iDisqus.min.js"></script>
-<script>
-      var disq = new iDisqus('comment', {
-        forum: 'chensu8',
-        api: 'https://d.cssj.fun/api',
-        site: 'https://cssj.fun',
-        mode: 3,
-        timeout: 3000,
-        init: true,
-		relatedType: false,
-      });
-</script>
-<!--disqusjs-->
-<link rel="stylesheet" href="/disqusjs/disqusjs.css">
-<script src="/disqusjs/disqus.js"></script>
-<div id="disqus_thread"></div>
-<script>
-  var dsqjs = new DisqusJS({
-    shortname: "",
-    siteName: "",
-    identifier: "https://cssj.fun/2020/moment/%E6%88%91%E4%BB%AC%E6%AF%94%E4%BB%BB%E4%BD%95%E6%97%B6%E5%80%99%E9%83%BD%E6%9B%B4%E9%9C%80%E8%A6%81%E7%88%B1%E4%B8%8E%E5%B8%8C%E6%9C%9B/",
-    url: "https://cssj.fun/2020/moment/%E6%88%91%E4%BB%AC%E6%AF%94%E4%BB%BB%E4%BD%95%E6%97%B6%E5%80%99%E9%83%BD%E6%9B%B4%E9%9C%80%E8%A6%81%E7%88%B1%E4%B8%8E%E5%B8%8C%E6%9C%9B/",
-    api: "",
-    apikey: "",
-    admin: "",
-    adminLabel: ""
-  });
-</script>
+<!--gitment-->
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@0.2.3/dist/twikoo.all.min.js"></script>
+<script>twikoo.init({ envId: 'blog-745abc', el: '#tcomment' })</script>
 
           </section>
         </div>
