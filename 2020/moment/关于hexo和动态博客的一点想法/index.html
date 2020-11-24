@@ -303,37 +303,11 @@
           <section class="itp-post-comment noprn">
             <!--评论-->
 
-<!--disqus-->
-<div id="comment"></div>
-    <link rel="stylesheet" href="//d.cssj.fun/disqus/dist/iDisqus.min.css" />
-    <script src="//d.cssj.fun/disqus/dist/iDisqus.min.js"></script>
-<script>
-      var disq = new iDisqus('comment', {
-        forum: 'chensu8',
-        api: 'https://d.cssj.fun/api',
-        site: 'https://cssj.fun',
-        mode: 3,
-        timeout: 3000,
-        init: true,
-		relatedType: false,
-      });
-</script>
-<!--disqusjs-->
-<link rel="stylesheet" href="/disqusjs/disqusjs.css">
-<script src="/disqusjs/disqus.js"></script>
-<div id="disqus_thread"></div>
-<script>
-  var dsqjs = new DisqusJS({
-    shortname: "",
-    siteName: "",
-    identifier: "https://cssj.fun/2020/moment/%E5%85%B3%E4%BA%8Ehexo%E5%92%8C%E5%8A%A8%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/",
-    url: "https://cssj.fun/2020/moment/%E5%85%B3%E4%BA%8Ehexo%E5%92%8C%E5%8A%A8%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/",
-    api: "",
-    apikey: "",
-    admin: "",
-    adminLabel: ""
-  });
-</script>
+<!--twikoo-->  
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@0.2.3/dist/twikoo.all.min.js"></script>
+<script>twikoo.init({ envId: 'blog-745abc', el: '#tcomment' })</script>
+
 
           </section>
         </div>

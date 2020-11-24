@@ -321,37 +321,11 @@
           <section class="itp-post-comment noprn">
             <!--评论-->
 
-<!--disqus-->
-<div id="comment"></div>
-    <link rel="stylesheet" href="//d.cssj.fun/disqus/dist/iDisqus.min.css" />
-    <script src="//d.cssj.fun/disqus/dist/iDisqus.min.js"></script>
-<script>
-      var disq = new iDisqus('comment', {
-        forum: 'chensu8',
-        api: 'https://d.cssj.fun/api',
-        site: 'https://cssj.fun',
-        mode: 3,
-        timeout: 3000,
-        init: true,
-		relatedType: false,
-      });
-</script>
-<!--disqusjs-->
-<link rel="stylesheet" href="/disqusjs/disqusjs.css">
-<script src="/disqusjs/disqus.js"></script>
-<div id="disqus_thread"></div>
-<script>
-  var dsqjs = new DisqusJS({
-    shortname: "",
-    siteName: "",
-    identifier: "https://cssj.fun/2020/2020-04-09-che-nan-ting/",
-    url: "https://cssj.fun/2020/2020-04-09-che-nan-ting/",
-    api: "",
-    apikey: "",
-    admin: "",
-    adminLabel: ""
-  });
-</script>
+<!--twikoo-->  
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@0.2.3/dist/twikoo.all.min.js"></script>
+<script>twikoo.init({ envId: 'blog-745abc', el: '#tcomment' })</script>
+
 
           </section>
         </div>
