@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cssj.fun/"/>
-  <updated>2020-11-11T03:32:25.707Z</updated>
+  <updated>2020-11-27T08:37:07.454Z</updated>
   <id>https://cssj.fun/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  
+  <entry>
+    <title>博客换到vercel</title>
+    <link href="https://cssj.fun/2020/2020-11-27zhuan-yi-dao-vercel-md/"/>
+    <id>https://cssj.fun/2020/2020-11-27zhuan-yi-dao-vercel-md/</id>
+    <published>2020-11-27T08:17:24.000Z</published>
+    <updated>2020-11-27T08:37:07.454Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;近期比较忙，之前胡言乱语写了点东西，都是一些唠叨事，没必要发到博客上去引起共鸣，毕竟别人没经历过你的生活，那来那么多我懂你。&lt;/p&gt;
+&lt;p&gt;这篇文章主要是记录一下我的静态博客部署过程。&lt;/p&gt;
+&lt;p&gt;cloud</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
   
   
   <entry>

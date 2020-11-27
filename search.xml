@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>博客换到vercel</title>
+      <link href="/2020/2020-11-27zhuan-yi-dao-vercel-md/"/>
+      <url>/2020/2020-11-27zhuan-yi-dao-vercel-md/</url>
+      
+        <content type="html"><![CDATA[<p>近期比较忙，之前胡言乱语写了点东西，都是一些唠叨事，没必要发到博客上去引起共鸣，毕竟别人没经历过你的生活，那来那么多我懂你。</p><p>这篇文章主要是记录一下我的静态博客部署过程。</p><p>cloud studio刚发布的时候我就用上了，当时觉得还不错，也写了几篇通过cloud studio来搭建免费博客的文章，反响不错，阅读量挺多。</p><p><img src="https://i.cssj.fun/usr/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201127145932.png" alt=""></p><p>当时我还是用的Typecho程序，最开始研究只是觉得有趣，所以一直瞎折腾，后来觉得静态博客更方便，就彻底转移到cloud studio了，直到有一段时间，我每天收到邮件通知，提示网站无法访问。当时问过客服，客服说是线路问题。我想着线路问题也不能天天有问题啊，没办法，退而求其次将博客部署到了github，然而没过多久，良心云就正式推出了<strong>云开发 CloudBase</strong>，上手了一下，还挺好。</p><hr><p>此处略过800字………………….</p><p>过程不想写了，结果就是今天发现部署在coding的博客又访问不了，登陆上去提示让升级。<img src="https://i.cssj.fun/usr/hugo/image-20201127152235858.png" alt="image-20201127152235858"></p><p>我总结了一下就是：免费的不能用了。</p><p>好吧，虽然即使我升级以后，按照这点可怜的访问量，也花不了几个钱，但是在做好心里建设后，准备升级却发现失败了。</p><p><img src="https://i.cssj.fun/usr/hugo/image-20201127152556242.png" alt="image-20201127152556242"></p><p>找了半天没找到问题出在哪里，从哪里解绑已绑定的coding账号，直到发工单问了客服。结论就是无法解绑，只能注销。这个玩笑小弟我开不起，所以，又转入到vercel的怀抱吧。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2020年11月7日打卡植物园</title>
       <link href="/2020/zhi-wu-yuan/"/>
       <url>/2020/zhi-wu-yuan/</url>
@@ -926,17 +939,6 @@
     
     
     <entry>
-      <title>产品图案例</title>
-      <link href="/product-pattern-example.html"/>
-      <url>/product-pattern-example.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>导航</title>
       <link href="/navigate/index.html"/>
       <url>/navigate/index.html</url>
@@ -951,6 +953,17 @@
       <title>工具箱</title>
       <link href="/tools/index.html"/>
       <url>/tools/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>产品图案例</title>
+      <link href="/product-pattern-example.html"/>
+      <url>/product-pattern-example.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
