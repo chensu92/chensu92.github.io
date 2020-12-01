@@ -8,7 +8,7 @@
       <link href="/2020/2020-11-27zhuan-yi-dao-vercel-md/"/>
       <url>/2020/2020-11-27zhuan-yi-dao-vercel-md/</url>
       
-        <content type="html"><![CDATA[<p>近期比较忙，之前胡言乱语写了点东西，都是一些唠叨事，没必要发到博客上去引起共鸣，毕竟别人没经历过你的生活，那来那么多我懂你。<br>这篇文章主要是记录一下我的静态博客部署过程。<br>cloud studio刚发布的时候我就用上了，当时觉得还不错，也写了几篇通过cloud studio来搭建免费博客的文章，反响不错，阅读量挺多。</p><p><img src="https://i.cssj.fun/usr/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201127145932.png" alt=""></p><p>当时我还是用的Typecho程序，最开始研究只是觉得有趣，所以一直瞎折腾，后来觉得静态博客更方便，就彻底转移到cloud studio了，直到有一段时间，我每天收到邮件通知，提示网站无法访问。当时问过客服，客服说是线路问题。我想着线路问题也不能天天有问题啊，没办法，退而求其次将博客部署到了github，然而没过多久，良心云就正式推出了<strong>云开发 CloudBase</strong>，上手了一下，还挺好。</p><hr><p>此处略过800字………………….过程不想写了，结果就是今天发现部署在coding的博客又访问不了，登陆上去提示让升级。<img src="https://i.cssj.fun/usr/hugo/image-20201127152235858.png" alt="image-20201127152235858"></p><p>我总结了一下就是：免费的不能用了。</p><p>好吧，虽然即使我升级以后，按照这点可怜的访问量，也花不了几个钱，但是在做好心里建设后，准备升级却发现失败了。</p><p><img src="https://i.cssj.fun/usr/hugo/image-20201127152556242.png" alt="image-20201127152556242"></p><p>找了半天没找到问题出在哪里，从哪里解绑已绑定的coding账号，直到发工单问了客服。结论就是无法解绑，只能注销。这个玩笑小弟我开不起，所以，又转入到vercel的怀抱吧。</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a>写在开始</h3><p>近期比较忙，之前胡言乱语写了点东西，都是一些唠叨事，没必要发到博客上去引起共鸣，毕竟别人没经历过你的生活，那来那么多我懂你。<br>这篇文章主要是记录一下我的静态博客部署过程。<br>cloud studio刚发布的时候我就用上了，当时觉得还不错，也写了几篇通过cloud studio来搭建免费博客的文章，反响不错，阅读量挺多。</p><p><img src="https://i.cssj.fun/usr/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201127145932.png" alt=""></p><p>当时我还是用的Typecho程序，最开始研究只是觉得有趣，所以一直瞎折腾，后来觉得静态博客更方便，就彻底转移到cloud studio了，直到有一段时间，我每天收到邮件通知，提示网站无法访问。当时问过客服，客服说是线路问题。我想着线路问题也不能天天有问题啊，没办法，退而求其次将博客部署到了github，然而没过多久，良心云就正式推出了<strong>云开发 CloudBase</strong>，上手了一下，还挺好。</p><hr><h3 id="此处略过800字，"><a href="#此处略过800字，" class="headerlink" title="此处略过800字，"></a>此处略过800字，</h3><p>过程懒得写了，结果就是今天发现部署在coding的博客又访问不了，登陆上去提示让升级。<img src="https://i.cssj.fun/usr/hugo/image-20201127152235858.png" alt="image-20201127152235858"></p><h3 id="我总结了一下就是：免费的不能用了。"><a href="#我总结了一下就是：免费的不能用了。" class="headerlink" title="我总结了一下就是：免费的不能用了。"></a>我总结了一下就是：免费的不能用了。</h3><p>好吧，虽然即使我升级以后，按照这点可怜的访问量，也花不了几个钱，但是在做好心里建设后，准备升级却发现失败了。</p><p><img src="https://i.cssj.fun/usr/hugo/image-20201127152556242.png" alt="image-20201127152556242"></p><p>找了半天没找到问题出在哪里，从哪里解绑已绑定的coding账号，直到发工单问了客服。结论就是无法解绑，只能注销。这个玩笑小弟我开不起，所以，又转入到vercel的怀抱吧。</p><h3 id="2020年12月1日更新"><a href="#2020年12月1日更新" class="headerlink" title="2020年12月1日更新"></a>2020年12月1日更新</h3><p>折腾半天，无奈还是感觉coding部署更方便一点，无奈，重新注册了一个腾讯云账号并绑定了coding，博客又恢复了。</p>]]></content>
       
       
       
@@ -829,22 +829,11 @@
     
     
     <entry>
-      <title>日历</title>
-      <link href="/calendar.html"/>
-      <url>/calendar.html</url>
-      
-        <content type="html"><![CDATA[<link href="/css/calendar.css" rel="stylesheet"><section class="main-section first-section">  <h1 class="mdui-text-center date">01/30</h1>  <p class="mdui-text-center sentence">我们始终在用无知面对世界</p></section>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about.html"/>
       <url>/about.html</url>
       
-        <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>🕴平民百姓，何足挂齿。<br>我喜欢网络，喜欢未知的东西。<br>就像这个网站的出现，没有目的，只有兴趣。<br>涉足网络十多年， 接触了许多新的东西，认识了一些朋友。<br><strong>如果你想认识我， 那么欢迎你， 我很乐意！</strong></p><h2 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h2><blockquote><p>这里是我小天地，用来记录生活。对我个人而言，如果一件事没有记录，那这件事终将在记忆中被遗忘，进而找不到他存在的任何证据。我在这里写下的文字，是我存在的最好的证明。</p></blockquote><p>本博客采用 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 驱动，托管在腾讯云开发，评论系统通过<a href="https://github.com/fooleap/disqus-php-api" target="_blank" rel="noopener">disqus</a> 托管在 <a href="https://my.liluohost.com/aff.php?aff=255" target="_blank" rel="noopener">liluohost</a>。</p><h2 id="实验室"><a href="#实验室" class="headerlink" title="实验室"></a>实验室</h2><p><a href="https://tp.cssj.fun/" target="_blank" rel="noopener">Typecho主题</a>                                        <a href="http://ps1j9d.coding-pages.com/" target="_blank" rel="noopener">hugo主题</a> </p><p><img src="https://i.cssj.fun/usr/uploads/2019/03/waiting.jpg" alt=""></p><blockquote><p>种族不代表荣耀，我见过最高尚的兽人，也见过最卑劣的人类。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>🕴平民百姓，何足挂齿。<br>我喜欢网络，喜欢未知的东西。<br>就像这个网站的出现，没有目的，只有兴趣。<br>涉足网络十多年， 接触了许多新的东西，认识了一些朋友。<br><strong>如果你想认识我， 那么欢迎你， 我很乐意！</strong></p><h2 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h2><p>关于域名，cssj是琛苏设计的首拼；fun中文翻译是有趣，本来做这个博客就是兴趣使然，记录一些有趣的事情，理所当然的选择了CSSJ.FUN。<br>这里是我小天地，用来记录生活。对我个人而言，如果一件事没有记录，那这件事终将在记忆中被遗忘，进而找不到他存在的任何证据。我在这里写下的文字，是我存在的最好的证明。<br>本博客采用 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 驱动，托管在腾讯云开发，评论系统通过<a href="https://github.com/fooleap/disqus-php-api" target="_blank" rel="noopener">disqus</a> 托管在 <a href="https://my.liluohost.com/aff.php?aff=255" target="_blank" rel="noopener">liluohost</a>。</p><h2 id="实验室"><a href="#实验室" class="headerlink" title="实验室"></a>实验室</h2><p><a href="https://tp.cssj.fun/" target="_blank" rel="noopener">Typecho主题</a>                                        <a href="http://ps1j9d.coding-pages.com/" target="_blank" rel="noopener">hugo主题</a> </p><p><img src="https://i.cssj.fun/usr/uploads/2019/03/waiting.jpg" alt=""></p><blockquote><p>种族不代表荣耀，我见过最高尚的兽人，也见过最卑劣的人类。</p></blockquote>]]></content>
       
     </entry>
     
@@ -856,6 +845,17 @@
       <url>/resume.html</url>
       
         <content type="html"><![CDATA[<p style="text-align: center"> 琛苏设计 </p><p style="text-align: center"> 广西壮族自治区 南宁市青秀区仙葫经济开发区 五合大道合兴路 3 号 南宁师范大学五合校区 </p><p style="text-align: center"> aiokr@outlook.com </p><h2 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a>教育经历</h2><p><strong>南宁师范大学</strong> 2018.9 至今</p><p>所修专业：工商管理类 文化产业管理专业<br>技能证书：普通话水平等级测试二级乙等</p><h3 id="所获荣誉"><a href="#所获荣誉" class="headerlink" title="所获荣誉"></a>所获荣誉</h3><p>森林工作室 2018 年度先进个人（2018.12）<br>森林工作室 2019 年度先进个人 （2019.6）<br>南宁师范大学文创有料创意市集·暨第十届网络文化艺术节开幕式 优秀摊主 （2019.11）</p><h2 id="社团和组织经历"><a href="#社团和组织经历" class="headerlink" title="社团和组织经历"></a>社团和组织经历</h2><p>南宁师范大学经济与管理学院第十五届青年志愿者协会 宣传部 干事（2018.10-2019.1）<br>南宁师范大学经济与管理学院第十五届青年志愿者协会 宣传部 助理（2019.3-2019.6）</p><p>南宁师范大学经济与管理学院文化产业数字实验室（森林工作室）摄影摄像部 成员（2018.10-2019.6）</p><ul><li>广西师范学院经济与管理学院 2018 年青春风采大赛直播拍摄（2018.10 南宁）</li><li>南宁市 2019 年「我和我的祖国——壮族三月三·八桂嘉年华」文化旅游主场活动（2019.4 南宁）</li><li>南宁师范大学经济与管理学院 2019 年商务精英挑战赛直播拍摄（2019.5 南宁）</li></ul><p>南宁师范大学经济与管理学院文化产业数字实验室（森林工作室）摄影摄像部 部长（2019.6 至今）</p><ul><li>南宁师范大学经济与管理学院 2019 年毕业生晚会直播拍摄（2019.6 南宁）</li><li>广西重大科技专项「全域数字文化旅游智能服务技术研发与应用」项目考察及图像数据收集（2019.7 崇左）</li><li>南宁职业技术学院暑期三下乡重点团队「中外学生同讲中国故事，共建新农村教育帮扶基地」项目纪实视频拍摄（2019.7 百色）</li><li>2019 广西高校大学生市场营销大赛暨首届广西大学生乡村振兴创客大赛「归去来兮」团队部分视频拍摄（2019.11 南宁）</li><li>南宁师范大学经济与管理学院 2019 年青春风采大赛直播负责人（2019.11 南宁）</li></ul><h2 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h2><h3 id="柳州高级中学模拟联合国协会-技术顾问（2019-2-至今）"><a href="#柳州高级中学模拟联合国协会-技术顾问（2019-2-至今）" class="headerlink" title="柳州高级中学模拟联合国协会 技术顾问（2019.2 至今）"></a>柳州高级中学模拟联合国协会 技术顾问（2019.2 至今）</h3><p>2019 柳州市渊文模拟联合国大会（2019.6 柳州）</p><ul><li>担任组织委员会成员，技术总监。</li><li>负责会议物料设计、文件排版、会场引导标识制作。</li><li>负责会议回顾视频拍摄与后期剪辑调色工作，相关视频发布在公众平台，获得超过 600 的播放量。</li></ul><h2 id="其他项目"><a href="#其他项目" class="headerlink" title="其他项目"></a>其他项目</h2><p>个人自媒体平台（网站、微信公众号） （2018.5 至今）<br>2020 天津四校联会暨第四届实华模拟联合国大会 会议物料设计 文件排版 （2020.2 天津）<br>2020 环梦模拟联合国南方峰会 技术部成员 会议部分物料设计 （2020.2 长沙）</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日历</title>
+      <link href="/calendar.html"/>
+      <url>/calendar.html</url>
+      
+        <content type="html"><![CDATA[<link href="/css/calendar.css" rel="stylesheet"><section class="main-section first-section">  <h1 class="mdui-text-center date">01/30</h1>  <p class="mdui-text-center sentence">我们始终在用无知面对世界</p></section>]]></content>
       
     </entry>
     
@@ -895,28 +895,6 @@
     
     
     <entry>
-      <title>南宁 2019 秋</title>
-      <link href="/nanning2019.html"/>
-      <url>/nanning2019.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>柳州 2019 秋</title>
-      <link href="/liuzhou2019.html"/>
-      <url>/liuzhou2019.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的疯言疯语</title>
       <link href="/bb/index.html"/>
       <url>/bb/index.html</url>
@@ -939,9 +917,20 @@
     
     
     <entry>
-      <title>产品图案例</title>
-      <link href="/product-pattern-example.html"/>
-      <url>/product-pattern-example.html</url>
+      <title>柳州 2019 秋</title>
+      <link href="/liuzhou2019.html"/>
+      <url>/liuzhou2019.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>南宁 2019 秋</title>
+      <link href="/nanning2019.html"/>
+      <url>/nanning2019.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -961,6 +950,17 @@
     
     
     <entry>
+      <title>作品</title>
+      <link href="/work/index.html"/>
+      <url>/work/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>工具箱</title>
       <link href="/tools/index.html"/>
       <url>/tools/index.html</url>
@@ -972,9 +972,9 @@
     
     
     <entry>
-      <title>作品</title>
-      <link href="/work/index.html"/>
-      <url>/work/index.html</url>
+      <title>产品图案例</title>
+      <link href="/product-pattern-example.html"/>
+      <url>/product-pattern-example.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
