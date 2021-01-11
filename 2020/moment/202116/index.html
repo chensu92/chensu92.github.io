@@ -21,7 +21,7 @@
   
   <!--Open Graph Title-->
   
-  <meta property="og:title" content="博客搬家记" />
+  <meta property="og:title" content="新年疫情" />
   
   <!--Open Graph Description-->
   
@@ -35,12 +35,10 @@
   
   <!--Page Cover-->
   
-  <meta property="og:image" content="https://cssj.fun" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Title -->
   
-  <title>博客搬家记 - Chen su</title>
+  <title>新年疫情 - Chen su</title>
   <!-- 添加到主屏后的标题（iOS 6 新增） -->
   <meta name="apple-mobile-web-app-title" content="Chen su">
   <!-- 是否启用 WebApp 全屏模式 -->
@@ -181,24 +179,25 @@
   <div class="itp-cover noprn">
   <div class="itp-cover-img">
     
-    <img class="nofancy" src="https://i.cssj.fun/usr/uploads/2018/09/4198740634.jpg">
+    <img class="nofancy" src="https://i.cssj.fun/usr/hugo/pexels-flora-westbrook-5221808.jpg">
     
   </div>
   <div class="itp-cover-text">
     <div class="itp-cover-title mdui-text-center"
       style="color: #fff; opacity: 1;">
-      博客搬家记</div>
+      新年疫情</div>
     <div class="itp-cover-subtitle mdui-text-center"
       style="color: #fff; opacity: 0.8;">
       
-2019-11-28
+2020-01-06
 <span> / </span>
-
-<a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
 
 
 <span> / </span>
-1.2k
+chensu
+
+<span> / </span>
+49
 <style>
   @media print {
     .itp-cover-subtitle a {
@@ -218,24 +217,25 @@
 <div class="itp-cover noscreen">
   <div class="itp-cover-img">
     
-    <img class="nofancy nodisplay" src="https://i.cssj.fun/usr/uploads/2018/09/4198740634.jpg">
+    <img class="nofancy nodisplay" src="https://i.cssj.fun/usr/hugo/pexels-flora-westbrook-5221808.jpg">
     
   </div>
   <div class="itp-cover-text">
     <div class="itp-cover-title mdui-text-center"
       style="color: #000; opacity: 1;">
-      博客搬家记</div>
+      新年疫情</div>
     <div class="itp-cover-subtitle mdui-text-center"
       style="color: #000 !important; opacity: 0.8;">
       
-2019-11-28
+2020-01-06
 <span> / </span>
-
-<a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
 
 
 <span> / </span>
-1.2k
+chensu
+
+<span> / </span>
+49
 <style>
   @media print {
     .itp-cover-subtitle a {
@@ -263,77 +263,22 @@
         <div class="mdui-card itp-post-card">
           <!--正文-->
           <section class="mdui-card-content itp-post-content article" role="article">
-            <p>自从  <a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a> 换到hugo后就将博客放到 腾讯云开发者平台也就是<a href="https://studio.dev.tencent.com/" target="_blank" rel="noopener">cloudstudio</a> ，很方便，在线写作、编译。前段时间看到群里有人说个人版 <a href="https://studio.dev.tencent.com/" target="_blank" rel="noopener">cloud studio</a> 估计到年底要下线了，做个保障，将数据转移到了新上线的<a href="https://cloudstudio.net/" target="_blank" rel="noopener">cloud studio</a>,其实也就是从CODING个人版转到了团队版。团队版的Cloud Studio进去以后需要自己安装需要用的工具，记录一下。</p>
-<h3 id="安装工具及Hugo"><a href="#安装工具及Hugo" class="headerlink" title="安装工具及Hugo"></a>安装工具及Hugo</h3><p>安装Hugo需要用到 wget命令，所以需要先安装wget，安装wget又需要curl，所以还得先安装 curl 。这是我百度以后研究出来的一种方法。</p>
-<p>首先安装wget</p>
-<pre><code>1  apt-get update  
-2  apt-get install wget  
-3  wget --version  </code></pre><p>再安装 curl </p>
-<pre><code class="html">1 sudo apt install curl
-要验证是否已安装curl，请在终端中键入curl
-2 curl</code></pre>
-<p>接下来 安装Hugo</p>
-<p>1、更新你的系统apt索引并安装Hugo：</p>
-<pre><code>sudo apt-get update $ sudo apt-get install hugo</code></pre><p>2、从<a href="https://github.com/hugo/releases/" target="_blank" rel="noopener">github hugo</a>页面下载最新版本，当前版本是v0.54.0，选择与你的CPU架构匹配的版本：</p>
-<pre><code>wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb</code></pre><p>3、然后使用以下命令安装包：</p>
-<pre><code>$ sudo dpkg -i hugo_0.54.0_Linux-64bit.deb
-
-Selecting previously unselected package hugo.
-
-(Reading database … 187292 files and directories currently installed.)
-
-Preparing to unpack hugo_0.54.0_Linux-64bit.deb …
-
-Unpacking hugo (0.54.0) …
-
-Setting up hugo (0.54.0) … </code></pre><p>如果安装成功，你应该能够使用hugo命令：</p>
-<pre><code>$ hugo --help</code></pre><h3 id="Git博客数据"><a href="#Git博客数据" class="headerlink" title="Git博客数据"></a>Git博客数据</h3><p>因为我每次更新完文章都会将博客备份到github中，所以在安装好hugo以后，直接将博客备份git下来就可以了。</p>
-<p><img src="https://i.cssj.fun/usr/hugo/11/bok.png" alt="琛苏"></p>
-<p>完美生成，相比较个人版的Cloud Studio有个方便之处就是可以自动部署到静态网站。而团队版需要手动操作</p>
-<pre><code>1、 cd public
-
-2、git init
-
-3、git add -A
-
-4、git commit -m &#39;deploy&#39;
-
-5、git push -f git@e.coding.net:chen92/chen92.git master
-
-对象计数中: 504, 完成.
-Delta compression using up to 8 threads.
-压缩对象中: 100% (377/377), 完成.
-写入对象中: 100% (504/504), 1.84 MiB | 12.20 MiB/s, 完成.
-Total 504 (delta 184), reused 0 (delta 0)
-remote: Resolving deltas: 100% (184/184), done.
-To e.coding.net:chen92/chen92.git
-
- + `9c28aee...fa22f68 master -&gt; master (forced update)</code></pre><p>然后部署到网页。</p>
-<p><img src="https://i.cssj.fun/usr/hugo/11/11.png" alt="琛苏"></p>
+            <p>受国际庄疫情影响，媳妇不让做公交了，坚持了一个多月的公交出行结束了，还有那刚坐了几天的地铁2号线。</p>
 
           </section>
           <!--文章底部信息-->
           <section class="mdui-card-content itp-post-content">
             <div class="mdui-text-center">
               <div class="itp-post-subtitle">
-                2019-11-28
+                2020-01-06
                 
                 <span> / </span>
-                <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-                
-                <span> / </span>
-                1.2k
+                49
               </div>
             </div>
             
             <div class="mdui-text-center" style="padding-top: 2px; font-size: .75rem !important;">
               <div class="tags-links">
-                
-                <div class="mdui-chip">
-                  <a class="mdui-chip-title" href="/tags/博客搬家/" rel="tag">
-                    博客搬家
-                  </a>
-                </div>
                 
               </div>
             </div>
@@ -345,17 +290,17 @@ To e.coding.net:chen92/chen92.git
   <div class="mdui-col-xs-6">
     
     <div class="itp-page-select-prev">
-      <a class="mdui-btn mdui-btn-icon" href="/2019/2019-12-13-zai-ci-zhen-teng-Gridea/"><i
+      <a class="mdui-btn mdui-btn-icon" href="/2020/2020-01-10-yi-ci-shi-bai-de-gou-wu-ri-ji/"><i
           class="mdui-icon material-icons">arrow_back</i></a>
-      <a class="mdui-chip-title" rel="prev" href="/2019/2019-12-13-zai-ci-zhen-teng-Gridea/">上一篇</a>
+      <a class="mdui-chip-title" rel="prev" href="/2020/2020-01-10-yi-ci-shi-bai-de-gou-wu-ri-ji/">上一篇</a>
     </div>
     
   </div>
   <div class="mdui-col-xs-6">
     
     <div class="itp-page-select-next  mdui-float-right">
-      <a class="mdui-chip-title" rel="next" href="/2019/2019-11-21-dang-le-yi-ci-xiao-tou/">下一篇</a>
-      <a class="mdui-btn mdui-btn-icon" href="/2019/2019-11-21-dang-le-yi-ci-xiao-tou/"><i
+      <a class="mdui-chip-title" rel="next" href="/2019/2019-12-31-nian-zhong-ji-lu/">下一篇</a>
+      <a class="mdui-btn mdui-btn-icon" href="/2019/2019-12-31-nian-zhong-ji-lu/"><i
           class="mdui-icon material-icons">arrow_forward</i></a>
     </div>
     
@@ -497,10 +442,6 @@ photos .photo:last-child {
       </div>
       <div class="mdui-col-md-2 mdui-col-xs-down">
         <!--
-
-<div id="toc" class="noprn nodisplay">
-  <ol class="itp-toc"><li class="itp-toc-item itp-toc-level-3"><a class="itp-toc-link" href="#安装工具及Hugo"><span class="itp-toc-text">安装工具及Hugo</span></a></li><li class="itp-toc-item itp-toc-level-3"><a class="itp-toc-link" href="#Git博客数据"><span class="itp-toc-text">Git博客数据</span></a></li></ol>
-</div>
 -->
       </div>
     </div>
