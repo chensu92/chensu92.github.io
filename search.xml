@@ -937,9 +937,42 @@
     
     
     <entry>
+      <title>我的疯言疯语</title>
+      <link href="/bb/index.html"/>
+      <url>/bb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>南宁 2019 秋</title>
       <link href="/nanning2019.html"/>
       <url>/nanning2019.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>柳州 2020 春</title>
+      <link href="/liuzhou2020spring.html"/>
+      <url>/liuzhou2020spring.html</url>
+      
+        <content type="html"><![CDATA[<p>今天终于有时间出门看紫荆花了。前几天一直阴雨绵绵，花开了又被雨打掉了不少，紫荆花也稀稀疏疏地挂在树上。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>柳州 2019 秋</title>
+      <link href="/liuzhou2019.html"/>
+      <url>/liuzhou2019.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -959,9 +992,9 @@
     
     
     <entry>
-      <title>导航</title>
-      <link href="/navigate/index.html"/>
-      <url>/navigate/index.html</url>
+      <title>工具箱</title>
+      <link href="/tools/index.html"/>
+      <url>/tools/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -970,9 +1003,9 @@
     
     
     <entry>
-      <title>柳州 2019 秋</title>
-      <link href="/liuzhou2019.html"/>
-      <url>/liuzhou2019.html</url>
+      <title>导航</title>
+      <link href="/navigate/index.html"/>
+      <url>/navigate/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -986,39 +1019,6 @@
       <url>/work/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>工具箱</title>
-      <link href="/tools/index.html"/>
-      <url>/tools/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的疯言疯语</title>
-      <link href="/bb/index.html"/>
-      <url>/bb/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>柳州 2020 春</title>
-      <link href="/liuzhou2020spring.html"/>
-      <url>/liuzhou2020spring.html</url>
-      
-        <content type="html"><![CDATA[<p>今天终于有时间出门看紫荆花了。前几天一直阴雨绵绵，花开了又被雨打掉了不少，紫荆花也稀稀疏疏地挂在树上。</p>]]></content>
       
     </entry>
     
