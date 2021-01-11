@@ -327,6 +327,101 @@
           </section>
           <section class="itp-post-comment noprn">
             <!-- twikoo -->
+ 
+  <style>
+    /* twikoo 评论样式 */
+b{color:#000000;;font-weight:bold;}
+a{color: #999999;text-decoration:none;}
+.twikoo{overflow: visible !important;}
+.tk-extras,.tk-row.actions .tk-action-icon.__markdown,.tk-preview,.tk-content p a.at,.tk-tag.tk-tag-green{display: none !important;}
+.tk-content{margin-top:0px !important;}
+.tk-content span{display:inline-block;}
+.tk-content p{ font-size: 15px;line-height: 1.8em;color: #222831;letter-spacing: 0;font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;color: rgba(0,0,0,0.75);}
+.tk-comment{margin-top: 17px !important;}
+.tk-comments-container .tk-avatar{margin-top:10px;}
+.tk-replies .tk-content span:first-child{visibility:hidden;}
+.tk-replies .tk-content span:first-child a{visibility:visible !important;margin-left: -2em;}
+.tk-expand{border-radius:0 0 5px 5px;position:relative;z-index:99;margin-top:-10px;padding:0 !important;}
+.tk-admin{position:fixed !important;z-index:999;}
+.el-button.tk-preview{border:none;}
+.el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner{border-color:#ccc !important;}
+.el-button--primary.is-disabled,.el-button--primary.is-disabled:active,.el-button--primary.is-disabled:focus,.el-button--primary.is-disabled:hover{color: #FFF !important;background-color: #252627 !important;border-color: #4a4b50 !important;}
+.tk-action-icon svg{fill: #434a56 !important;}
+.tk-comments-title .tk-icon svg{fill: #ccc !important;}
+.tk-action-count{color: #434a56 !important;}
+.el-loading-mask{background-color: #fff !important;}
+.dark-theme .el-loading-mask{background-color: #292a2d !important;}
+.dark-theme .tk-expand{background:linear-gradient(rgba(38,42,56,0),#3b3d42) !important;}
+.dark-theme .el-button,.dark-theme .el-input__inner, .dark-theme .el-textarea__inner{color: silver !important;background-color: #252627 !important;border-color: #4a4b50 !important;}
+.dark-theme .tk-meta-input .el-input .el-input-group__prepend{color: silver !important;background-color: #4a4b50 !important;border-color: #4a4b50 !important;}
+.dark-theme .el-button--primary.is-disabled,.dark-theme .el-button--primary.is-disabled:active,.dark-theme .el-button--primary.is-disabled:focus,.dark-theme .el-button--primary.is-disabled:hover{color: #FFF !important;background-color: #252627 !important;border-color: #4a4b50 !important;}
+.dark-theme .tk-action-icon svg{fill: #ccc !important;}
+.dark-theme .tk-comments-title .tk-icon svg{fill: #4a4b50 !important;}
+.dark-theme .tk-action-count{color: #ccc !important;}
+.OwO .OwO-body {z-index: 99;}
+.OwO .OwO-body .OwO-items-emoji .OwO-item{font-size:23px !important;}
+.OwO .OwO-body .OwO-items-image .OwO-item{max-width: calc(20% - 10px) !important;}
+.dark-theme .OwO-body{color: silver !important;background-color: #252627 !important;border-color: #4a4b50 !important;}
+.dark-theme .OwO .OwO-body .OwO-bar{border-top: 1px solid #4a4b50 !important;}
+.dark-theme .OwO .OwO-body .OwO-items .OwO-item,.dark-theme .OwO .OwO-body .OwO-bar{background:#4a4b50 !important;color: #ccc !important;}
+.tk-admin-close[data-v-45b8c260] {position: absolute;display: block;top: 0;right: 0;width: 1rem;height: 1rem;padding: 1rem;box-sizing: content-box;color: #ffffff;margin: 3.5em 0px !important;}
+.dark-theme .OwO .OwO-body .OwO-bar .OwO-packages li:hover,.dark-theme .OwO .OwO-body .OwO-items-image .OwO-item:hover,.dark-theme .OwO .OwO-body .OwO-bar .OwO-packages .OwO-package-active{background-color: #252627 !important;}
+
+photos:after{
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+photos {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+photos .photo:nth-of-type(3n) {
+  margin-right: 0px;
+}
+photos .photo:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 860px) {
+  photos .photo {
+    width: 180px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+  }
+}
+@media screen and (min-width: 860px) {
+  photos .photo {
+    width: 245px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float: left;
+  }
+}
+
+.page-photos figure{width:80%;margin:0 auto 3rem;}
+.page-photos figure img{box-shadow: 0 12px 40px rgba(0,0,0,.15);border-radius: 8px;}
+@media screen and (max-width: 860px) {
+	.page-photos figure{width:100%;margin:0 auto 2rem;}
+	.page-photos figure img{border-radius:0px;}
+}
+  </style>
+
+
  <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.0.0/dist/twikoo.all.min.js"></script>
 <script>
