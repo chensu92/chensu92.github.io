@@ -948,6 +948,28 @@
     
     
     <entry>
+      <title>记录美好生活</title>
+      <link href="/bbb/index.html"/>
+      <url>/bbb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>南宁 2019 秋</title>
+      <link href="/nanning2019.html"/>
+      <url>/nanning2019.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>柳州 2020 春</title>
       <link href="/liuzhou2020spring.html"/>
       <url>/liuzhou2020spring.html</url>
@@ -970,28 +992,6 @@
     
     
     <entry>
-      <title>产品图案例</title>
-      <link href="/product-pattern-example.html"/>
-      <url>/product-pattern-example.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>南宁 2019 秋</title>
-      <link href="/nanning2019.html"/>
-      <url>/nanning2019.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>导航</title>
       <link href="/navigate/index.html"/>
       <url>/navigate/index.html</url>
@@ -1003,9 +1003,9 @@
     
     
     <entry>
-      <title>作品</title>
-      <link href="/work/index.html"/>
-      <url>/work/index.html</url>
+      <title>产品图案例</title>
+      <link href="/product-pattern-example.html"/>
+      <url>/product-pattern-example.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1025,9 +1025,9 @@
     
     
     <entry>
-      <title>记录美好生活</title>
-      <link href="/bbb/index.html"/>
-      <url>/bbb/index.html</url>
+      <title>作品</title>
+      <link href="/work/index.html"/>
+      <url>/work/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
