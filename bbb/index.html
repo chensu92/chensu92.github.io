@@ -271,7 +271,7 @@
               date = item.date
               dataTime = '<p class="datatime"><i><time class="date" style="color: #ffffff;"><small>'+`${(date.getHours() + 1) <= 10 ? ('0' + date.getHours()) : date.getHours()}`+':'+`${(date.getMinutes() + 1) <= 10 ? ('0' + date.getMinutes()) :date.getMinutes()}`+`${(date.getHours() + 1) <= 12 ? 'am' : 'pm'}`+' · '+date.getFullYear()+'年'+(`${(date.getMonth() + 1) < 10 ? ('0' + (date.getMonth()+1)) :date.getMonth()+1}`)+'月'+`${(date.getDate() + 1) < 10 ? ('0' + date.getDate()) :date.getDate()}`+'日</small></time></i></p>'
               dataCont = '<p class="datacont">'+urlToLink(item.content)+'</p>'
-              dataFrom = '<p class="datafrom"><i><small style="color: #aaa;">#'+item.from+'</small></i></p>'
+              dataFrom = '<p class="datafrom"><i><small>#'+item.from+'</small></i></p>'
               resCont += '<li class="item"><div>'+dataTime+dataCont+dataFrom+'</div></li>'
             });
             $(bbClass).append('<section class="timeline page-'+page+'"><ul><div class="list">'+resCont+'</div></ul></section>')
